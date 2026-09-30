@@ -1,0 +1,208 @@
+<!-- =========================================================
+EMAIL 1: SUPERVISOR APPROVAL REQUEST
+SUBJECT: Supervisor approval required — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Supervisor Name],</p>
+
+<p>You are receiving this because you are <strong>[Requester Name]’s supervisor</strong>. Your approval is required before this deployment can be sent to the pipeline owner.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+<p><a href="[Approval Link]">Review and respond to this approval</a></p>
+
+<p>Approving sends the request to the pipeline owner. Rejecting stops the deployment.</p>
+
+
+<!-- =========================================================
+EMAIL 2: REQUESTER — AWAITING SUPERVISOR
+SUBJECT: Deployment awaiting supervisor review — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Requester Name],</p>
+
+<p>Your deployment request was received and is awaiting review by your supervisor, <strong>[Supervisor Name]</strong>.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Status:</strong> Awaiting supervisor review<br>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+<p>You will receive another email after your supervisor responds.</p>
+
+
+<!-- =========================================================
+EMAIL 3: REQUESTER — SUPERVISOR APPROVED
+SUBJECT: Supervisor approved deployment — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Requester Name],</p>
+
+<p>Your supervisor approved the deployment request. It has now been sent to the pipeline owner for final review.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Status:</strong> Awaiting pipeline owner review<br>
+<strong>Approved by:</strong> [Supervisor Name]<br>
+<strong>Supervisor comments:</strong> [Supervisor Comments]
+</p>
+
+<p>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+
+<!-- =========================================================
+EMAIL 4: REQUESTER — SUPERVISOR REJECTED
+SUBJECT: Deployment rejected by supervisor — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Requester Name],</p>
+
+<p>Your supervisor rejected the deployment request. The deployment has been stopped and will not be sent to the pipeline owner.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Status:</strong> Rejected by supervisor<br>
+<strong>Rejected by:</strong> [Supervisor Name]<br>
+<strong>Supervisor comments:</strong> [Supervisor Comments]
+</p>
+
+<p>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+
+<!-- =========================================================
+EMAIL 5: PIPELINE OWNER APPROVAL REQUEST
+SUBJECT: Pipeline owner approval required — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Pipeline Owner Name],</p>
+
+<p>You are receiving this because you are the <strong>designated approval owner for [Pipeline Name]</strong>. The requester’s supervisor has already approved this deployment.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p>
+<strong>Supervisor:</strong> [Supervisor Name]<br>
+<strong>Supervisor comments:</strong> [Supervisor Comments]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+<p><a href="[Approval Link]">Review and respond to this approval</a></p>
+
+<p>Approving releases the deployment to continue. Rejecting stops the deployment.</p>
+
+
+<!-- =========================================================
+EMAIL 6: REQUESTER — PIPELINE OWNER APPROVED
+SUBJECT: Deployment approved — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Requester Name],</p>
+
+<p>The pipeline owner approved your request. The deployment has been released to continue.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Status:</strong> Approved<br>
+<strong>Supervisor:</strong> [Supervisor Name] — Approved<br>
+<strong>Pipeline owner:</strong> [Pipeline Owner Name] — Approved<br>
+<strong>Owner comments:</strong> [Owner Comments]
+</p>
+
+<p>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
+
+
+<!-- =========================================================
+EMAIL 7: REQUESTER — PIPELINE OWNER REJECTED
+SUBJECT: Deployment rejected by pipeline owner — [Pipeline Name] — DEP-[Stage Run ID]
+========================================================== -->
+
+<p>Hi [Requester Name],</p>
+
+<p>The pipeline owner rejected your deployment request. The deployment has been stopped.</p>
+
+<p>
+<strong>Reference:</strong> DEP-[Stage Run ID]<br>
+<strong>Status:</strong> Rejected by pipeline owner<br>
+<strong>Supervisor:</strong> [Supervisor Name] — Approved<br>
+<strong>Rejected by:</strong> [Pipeline Owner Name]<br>
+<strong>Owner comments:</strong> [Owner Comments]
+</p>
+
+<p>
+<strong>Deployment type:</strong> [New deployment / Update or patch]<br>
+<strong>Requested by:</strong> [Requester Name]<br>
+<strong>From environment:</strong> [Source Environment]<br>
+<strong>To environment:</strong> [Target Environment]<br>
+<strong>Pipeline:</strong> [Pipeline Name]<br>
+<strong>Currently installed version:</strong> [Current Version or Not installed]<br>
+<strong>Deploying version:</strong> [Requested Version]
+</p>
+
+<p><strong>Deployer’s notes:</strong><br>
+[Deployment Notes]</p>
