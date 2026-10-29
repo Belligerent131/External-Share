@@ -1,0 +1,1 @@
+users?$filter=accountEnabled%20eq%20true%20and%20givenName%20ne%20null%20and%20surname%20ne%20null%20and%20mail%20ne%20null&$select=id,displayName,givenName,surname,userPrincipalName,mail,jobTitle,department,officeLocation,userType,accountEnabled&$count=true&$top=999
