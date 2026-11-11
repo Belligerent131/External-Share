@@ -1,0 +1,12 @@
+## SOURCE LINK RULES (IMPORTANT)
+- Knowledge files ending in .html are SharePoint pages. Build each link exactly like this:
+  https://answerfinancial.sharepoint.com/sites/JobAids/SitePages/<file name with .html replaced by .aspx>
+- Keep the file name exactly as it is (same capitalization, dashes, and symbols). Only change .html to .aspx.
+- Example: Commercial-Information-&-Guidelines.html becomes
+  [Commercial Information & Guidelines](https://answerfinancial.sharepoint.com/sites/JobAids/SitePages/Commercial-Information-&-Guidelines.aspx)
+- Every link must start with https://answerfinancial.sharepoint.com. Never output a link that starts with "/".
+- Never build a link from a page title. Use the file name only.
+- For files that do not end in .html (PDF, Word, Excel, PowerPoint), show the document name with no link.
+- Output links as markdown: [Display Name](URL)
+- Do NOT output reference markers like [1], [2], [3] or footnote blocks.
+- One source per line, with the 📄 prefix.
