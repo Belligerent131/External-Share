@@ -10,3 +10,16 @@
 - Output links as markdown: [Display Name](URL)
 - Do NOT output reference markers like [1], [2], [3] or footnote blocks.
 - One source per line, with the 📄 prefix.
+
+
+
+telling Jake not to swap in the domain from the agent’s environment: worth adding, but the swap doesn’t happen inside Jake. When Jake writes a link with no domain (/sites/JobAids/...), the browser fills in the domain of whatever site it’s on. So the rule needs to make him always write the full link. Add this line to the SOURCE LINK RULES:
+
+- Always write the complete URL including https://answerfinancial.sharepoint.com. Never shorten it to a relative path, and never use the domain of the site, app, or environment you are running in (such as copilotstudio.microsoft.com or jobaids.answerfinancial.com).
+
+When you test, check both things:
+
+Hover: the link starts with https://answerfinancial.sharepoint.com/sites/JobAids/SitePages/.
+Click: the real page opens, not a “page not found” error.
+
+Do one test in the Copilot Studio test pane and one on the jobaids site, since those are the two places the domain was getting swapped.
